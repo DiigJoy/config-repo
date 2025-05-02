@@ -23,8 +23,8 @@ spring:
           uri: lb://plan-service
           predicates:
             - Path=/plans/**
-        - id: notificacion-service
-          uri: lb://notificacion-service
+        - id: notification-service
+          uri: lb://notification-service
           predicates:
             - Path=/notificaciones/**
 
