@@ -4,6 +4,19 @@ server:
 spring:
   application:
     name: plan-service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/plandb
+    username: postgres
+    password: 12345678
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+  flyway:
+    enabled: true
+  kafka:
+    bootstrap-servers: localhost:9092
 
 eureka:
   client:
